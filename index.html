@@ -3,17 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="bootstrap.min.css">    
+    
     <link rel="stylesheet" href="css/style.css">
-    <title>Chuleta Quente</title>
-</head>
-<body>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js" defer></script>
+
+    <title>Chuleta Quente</title>
+</head>
+<body class="fundo-fixo">
+    <!-- area de menu --- um dia será em arquivo externo.... -->
+    <nav class="navbar navbar-expanded-md navbar-fixed-top navbar-light navbar-inverse">
+        <div class="container-fluid">
+            <!-- agrupamento Mobile -->
+            <div class="navbar-header">
+                <button 
+                    class="navbar-toggler collapsed" 
+                    type="button"
+                    data-taggle="collapse"
+                    data-target="#menupublico"
+                    aria-expanded="false"
+                    >
+                    <span class="sr-only"> Toggle Navigation </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/LogoChuletaQuente.png" alt="Logotipo Chuleta Quente">
+                </a>
+            </div>
+            <!-- fecha agrupamento Moblie -->
+            <div class="collapsed navbar-collapsed" id="menupublico">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="index.html">
+                            <span class="bi bi-house-fill"></span>
+                        </a>
+                    </li>
+                    <li><a href="#">DESTAQUES</a></li>
+                    <li><a href="#">PRODUTOS</a></li>
+                </ul>            
+            </div>
+        </div>
+        
+    </nav>
+
+    
 
 </body>
 </html>
