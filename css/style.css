@@ -2,11 +2,13 @@
 
 @charset "utf8";
 
-body{
-    margin-top: 40px;
-    padding-top: 40px;
-}
 .fundo-fixo{
     background: url(../images/churrascaria.png) no-repeat fixed;
     -webkit-background-size: cover;
+}
+main{
+    padding-top:80px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.4);
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.2);
 }

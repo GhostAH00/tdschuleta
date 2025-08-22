@@ -1,61 +1,212 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="bootstrap.min.css">    
-    
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="bootstrap.min.js" defer></script>
-
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- bootstrap js com parametro defer, que permite a execução js após carregamento -->
+    <script src="js/bootstrap.min.js" defer></script>
     <title>Chuleta Quente</title>
 </head>
 <body class="fundo-fixo">
     <!-- area de menu --- um dia será em arquivo externo.... -->
-    <nav class="navbar navbar-expanded-md navbar-fixed-top navbar-light navbar-inverse">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <!-- agrupamento Mobile -->
-            <div class="navbar-header">
-                <button 
-                    class="navbar-toggler collapsed" 
-                    type="button"
-                    data-taggle="collapse"
-                    data-target="#menupublico"
-                    aria-expanded="false"
-                    >
-                    <span class="sr-only"> Toggle Navigation </span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
-                </button>
-                <a href="index.html" class="navbar-brand">
-                    <img src="images/LogoChuletaQuente.png" alt="Logotipo Chuleta Quente">
+            <a href="index.html" class="navbar-brand">
+            <img
+                src="images/LogoChuletaQuente.png"
+                alt="logotipo chuleta quente"
+                width="140px"
+            />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menupublico"
+                aria-controls="menupublico"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menupublico">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <i class="bi bi-house-door-fill"></i> HOME                
+                </a>                
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">DESTAQUES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">PRODUTOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a href=""
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                TIPOS
                 </a>
-            </div>
-            <!-- fecha agrupamento Moblie -->
-            <div class="collapsed navbar-collapsed" id="menupublico">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="index.html">
-                            <span class="bi bi-house-fill"></span>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="#" class="dropdown-item">Bebidas</a></li>
+                    <li><a href="#" class="dropdown-item">Sobremesa</a></li>
+                    <li><a href="#" class="dropdown-item">Churrasco</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato" class="nav-link">CONTATO</a>
+                </li>
+    
+                <li class="nav-item">
+                    <form class="d-flex" role="search">
+                    <input type="search" class="form-control me-2" placeholder="Buscar Produto" aria-label="Search" required/>
+                    <button class="btn btn-outline-success">
+                    <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex">
+                        <i class="bi bi-person-fill"></i>&nbsp;ADMIN/CLIENTE
+                    </a>
+                </li>
+                
+            </ul>
+            </div>            
+        </div>
+    </nav>
+    <main class="container">
+        <section>
+            <h2 class="alert alert-success">Produtos</h2>
+            <div class="row">
+                <!-- Card produto -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_01.png" alt="Picanha" class="card-img-top">
+                    <div class="card-body bg-success text-white">
+                        <h3 class="card-title text-white">
+                            <strong> <i>Picanha</i>  </strong>
+                        </h3>
+                        <p class="card-text text-start">
+                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
+                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                        </p>
+                        <a href="" class="btn btn-primary float-end">
+                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
                         </a>
-                    </li>
-                    <li><a href="#">DESTAQUES</a></li>
-                    <li><a href="#">PRODUTOS</a></li>
-                </ul>            
+
+                    </div>
+                </div>
+            </div>
+            <!-- Card  -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
+                    <div class="card-body bg-success text-white">
+                        <h3 class="card-title text-white">
+                            <strong> <i>Maminha </i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
+                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                        </p>
+                        <a href="" class="btn btn-primary float-end">
+                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+
+                    </div>
+                </div>            
+            </div>
+
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
+                    <div class="card-body bg-success text-white">
+                        <h3 class="card-title text-white">
+                            <strong> <i>Maminha </i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
+                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                        </p>
+                        <a href="" class="btn btn-primary float-end">
+                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
+                    <div class="card-body bg-success text-white">
+                        <h3 class="card-title text-white">
+                            <strong> <i>Maminha </i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
+                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                        </p>
+                        <a href="" class="btn btn-primary float-end">
+                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+
+                    </div>
+                </div>            
+            </div>   
+        </section>
+    </main>
+    <footer class="container-fluid ps-4 bg-dark text-white p-4 rounded-top" id="CONTATO">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="images/LogoChuletaQuente.png" alt="logo pequeno" class="mb-2" width="150">
+                <br />
+                <p><i><strong>O melhor churrasco da Zona Leste </strong></i></p>
+                <address>
+                    <i class="bi bi-pin-fill"></i> Avenida Itaquera, 8266 - Itaquera São Paulo - SP - 08295000
+                    <br>
+                    <i class="bi bi-telephone-fill"></i> (11) 2185-9200 <br>
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:contato@chuletaquente.com.br?subject=Contato do Site"
+                     class="text-white text-decoration-none">
+                    contato@chuletaquente.com.br
+                    </a>
+                </address>
+                <div class="ratio ratio-4x3">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117054.8830394383!2d-46.51044499015454!3d-23.53375780691762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1755874050006!5m2!1spt-BR!2sbr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <!-- Coluna endereço e mapa -->
+            <div class="col-md-4 col-sm-6 mb-4">
+
+            <!-- final coluna dos menus de footer -->
             </div>
         </div>
-        
-    </nav>
-
-    
-
+    </footer>
 </body>
 </html>
