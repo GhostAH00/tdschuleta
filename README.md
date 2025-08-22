@@ -40,6 +40,6 @@ Durante as aulas com o professor Well:
 ## 💬 Créditos
 
 Projeto utilizado nas aulas de desenvolvimento web com o **Professor Well**.  
-Desenvolvido como ferramenta de aprendizado com base em um sistema de vendas para o restaurante fictício **Chuleta Quente** (criado pelo próprio **Professor Well**](https://github.com/softkleen)).
+Desenvolvido como ferramenta de aprendizado com base em um sistema de vendas para o restaurante fictício **Chuleta Quente** (criado pelo próprio [**Professor Well**](https://github.com/softkleen)).
 
 ---
