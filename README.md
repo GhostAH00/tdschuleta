@@ -1,6 +1,6 @@
-# 🍖 Chuleta Quente - Aula com Professor Well
+# 🍖 La Brasa do Mar - Aula com Professor Well
 
-**Chuleta Quente** é um sistema de vendas desenvolvido como parte das aulas ministradas pelo **Professor Well**, com foco em ensinar o funcionamento completo de um sistema web para gerenciamento de um restaurante ou churrascaria.
+**La Brasa do Mar** é um sistema de vendas desenvolvido como parte das aulas ministradas pelo **Professor Well**, com foco em ensinar o funcionamento completo de um sistema web para gerenciamento de um restaurante ou churrascaria.
 
 Durante as aulas, o professor irá **guiar os alunos passo a passo** na criação e entendimento do sistema, mostrando **como estruturar, desenvolver e utilizar** as funcionalidades principais de um sistema de vendas.
 
