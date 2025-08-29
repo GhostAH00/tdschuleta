@@ -12,3 +12,56 @@ main{
     background-color: rgb(255, 255, 255, 0.4);
     box-shadow: 4px 4px 8px rgb(0, 0, 0, 0.2);
 }
+
+.alert-produtos {
+  background-color: #ffcc80; /* laranja areia suave */
+  color: #4e342e; /* marrom escuro */
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.bg-churras-praia {
+  background-color: #fce8c3; /* fundo areia suave */
+  color: #4e342e;            /* marrom escuro para texto */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+.bg-churras-praia h3,
+.bg-churras-praia p {
+  color: #4e342e;
+}
+.btn-churras {
+  background-color: #ff7043; /* botão laranja queimado */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn-churras:hover {
+  background-color: #ff5722;
+  color: white;
+}
+
+.form-control:focus,
+textarea.form-control:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 112, 67, 0.25) !important;
+  border-color: #ff7043 !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+button:focus,
+.btn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 112, 67, 0.25) !important;
+  border-color: #ff7043 !important;
+}
+
+select.form-select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 112, 67, 0.25) !important;
+  border-color: #ff7043 !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}

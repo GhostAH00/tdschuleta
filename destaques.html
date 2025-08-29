@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destaques | La Brasa do Mar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.min.js" defer></script>
+</head>
+<body class="fundo-fixo">
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+        <img src="images/LogoLaBrasaDoMar.png" alt="Logotipo La Brasa do Mar" width="140px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menupublico">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menupublico">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i></a></li>
+            <li class="nav-item"><a href="destaques.html" class="nav-link active">DESTAQUES</a></li>
+            <li class="nav-item"><a href="produto.html" class="nav-link">PRODUTOS</a></li>
+            <li class="nav-item dropdown">
+                <a href="#"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    TIPOS
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="#" class="dropdown-item">Bebidas</a></li>
+                    <li><a href="#" class="dropdown-item">Sobremesa</a></li>
+                    <li><a href="#" class="dropdown-item">Churrasco</a></li>
+                </ul>
+                </li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">CONTATO</a></li>
+            <li class="nav-item">
+                    <form class="d-flex" role="search">
+                    <input type="search" class="form-control me-2" placeholder="Buscar Produto" aria-label="Search" required/>
+                    <button class="btn btn-outline-success">
+                    <i class="bi bi-search"></i>
+                    </button>
+                </form>
+                </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link d-flex">
+              <i class="bi bi-person-fill"></i>&nbsp;ADMIN/CLIENTE
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container mt-5 pt-5">
+    <h2 class="alert alert-produtos text-center">Nossos Destaques</h2>
+
+    <section class="row justify-content-center">
+      <div class="col-md-6 bg-churras-praia p-4 mb-4">
+        <h3>Obra rolando!</h3>
+        <p>🛠️ Tá tudo meio em construção por aqui...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+    <footer  class="container ps-4 bg-dark text-white p-4 rounded-top"  id="CONTATO">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img
+                    src="images/LogoLaBrasaDoMar.png"
+                    alt="logo pequeno"
+                    class="mb-2"
+                    width="150"
+                />
+                <br />
+                <p>
+                    <i><strong> Onde o sabor da Zona Leste encontra a alma da praia</strong></i>
+                </p>
+                <address>
+                    <i class="bi bi-pin-fill"></i> Avenida Itaquera, 8266 - Itaquera São
+                    Paulo - SP - 08295000
+                    <br />
+                    <i class="bi bi-telephone-fill"></i> (11) 2185-9200 <br />
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <a
+                    href="mailto:contato@labrasadomar.com.br?subject=Contato do Site"
+                    class="text-white text-decoration-none"
+                    >
+                    contato@labrasadomar.com.br
+                    </a>
+                </address>
+            
+                <div class="ratio ratio-4x3">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.8979222214853!2d-46.457737761427815!3d-23.539844184922032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1755874038973!5m2!1spt-BR!2sbr"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+            <!-- final coluna endereço e mapa -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <h4>Links</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-house-fill"></i> Home
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="destaques.html" class="nav-link text-white ps-0">
+                        <i class="bi bi-star-fill"></i> Destaques
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="produto.html" class="nav-link text-white ps-0">
+                        <i class="bi bi-basket-fill"></i> Produtos 
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="contato.html" class="nav-link text-white ps-0">
+                        <i class="bi bi-envelope-at-fill"></i> Contato
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="admin/index.html" class="nav-link text-white ps-0">
+                        <i class="bi bi-person-circle"></i> Administração
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="https://www.sp.senac.br/senac-itaquera" target="_blank" class="nav-link text-white ps-0">
+                        <i class="bi bi-globe-americas"></i> Senac
+                    </a>
+                    </li>
+                </ul>
+                </div> <!-- final coluna dos menus do footer -->
+
+                <div class="col-md-4 col-sm-6 mb-4">
+                <h4>Contato</h4>
+                <form method="get" action="index.html">
+                    <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                    <input type="text"  name="nome_contato" placeholder="Digite seu nome" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </span>
+                    <input type="email" class="form-control" name="email_contato" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="bi bi-pencil-fill"></i>
+                    </span>
+                    <textarea name="comentario_contato" rows="4" placeholder="Digite seu comentário" class="form-control" required></textarea>
+                    </div>
+                    <button class="btn btn-danger w-100" type="submit">
+                    Enviar <i class="bi-send-fill"></i>
+                    </button>
+                </form>
+            </div> <!-- final coluna Formulário contato -->
+        
+            <div class="col-12 text-center border-top border-secondary pt-3 mt-3">
+                <small>Desenvolvido por Ghost™ | <a href="mailto:ghost@gmail.com.br" class="text-white text-decoration-none">ghost@gmail.com.br</a></small>
+            </div><!-- final linha fechamento rodapé -->   
+        </div>
+    </footer>
+</body>
+</html>

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    />
+    <meta name="description" content="La Brasa do Mar - Os melhores cortes e sabores direto da brasa para sua mesa.">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
- 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Bootstrap 5.3 local  - totalmente moderno e atualizado! -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- bootstrap js com parametro defer, que permite a execução js após carregamento -->
+
+    <!-- CSS local (Nosso) -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap JS com parametro defer, que permite a execução js após o carregamento DOM -->
     <script src="js/bootstrap.min.js" defer></script>
-    <title>Chuleta Quente</title>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+
+    <title>La Brasa do Mar</title>
 </head>
 <body class="fundo-fixo">
     <!-- area de menu --- um dia será em arquivo externo.... -->
@@ -23,8 +28,8 @@
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
             <img
-                src="images/LogoChuletaQuente.png"
-                alt="logotipo chuleta quente"
+                src="images/LogoLaBrasaDoMar.png"
+                alt="logotipo La Brasa do Mar"
                 width="140px"
             />
             </a>
@@ -43,22 +48,22 @@
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
                 <a href="index.html" class="nav-link active" aria-current="page">
-                    <i class="bi bi-house-door-fill"></i> HOME                
+                    <i class="bi bi-house-door-fill"></i>                
                 </a>                
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">DESTAQUES</a>
+                    <a href="destaques.html" class="nav-link">DESTAQUES</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">PRODUTOS</a>
+                    <a href="produto.html" class="nav-link">PRODUTOS</a>
                 </li>
                 <li class="nav-item dropdown">
-                <a href=""
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                TIPOS
+                <a href="#"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    TIPOS
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a href="#" class="dropdown-item">Bebidas</a></li>
@@ -67,7 +72,7 @@
                 </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#contato" class="nav-link">CONTATO</a>
+                    <a href="contato.html" class="nav-link">CONTATO</a>
                 </li>
     
                 <li class="nav-item">
@@ -90,122 +95,324 @@
     </nav>
     <main class="container">
         <section>
-            <h2 class="alert alert-success">Produtos</h2>
+            <h2 class="alert alert-produtos">Produtos</h2>
             <div class="row">
                 <!-- Card produto -->
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card">
                     <img src="images/chu_01.png" alt="Picanha" class="card-img-top">
-                    <div class="card-body bg-success text-white">
-                        <h3 class="card-title text-white">
-                            <strong> <i>Picanha</i>  </strong>
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Picanha</i></strong>
                         </h3>
                         <p class="card-text text-start">
-                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
-                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                            Escolhi a melhor parte da peça, selei com manteiga de alho e finalizei no ponto perfeito porque picanha boa não se esconde, ela se revela no sabor.
                         </p>
-                        <a href="" class="btn btn-primary float-end">
-                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
                             <i class="bi bi-eye-fill"></i>
                         </a>
-
                     </div>
                 </div>
             </div>
             <!-- Card  -->
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
-                    <div class="card-body bg-success text-white">
-                        <h3 class="card-title text-white">
-                            <strong> <i>Costela </i></strong>
+                    <img src="images/chu_06.png" alt="Costela" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Costela</i></strong>
                         </h3>
                         <p class="card-text text-start">
-                           A costela suculenta, assada lentamente até desmanchar na boca. Venha saborear essa delícia que fala direto com o coração.
+                           Cozida lentamente por horas, a costela chega à mesa soltando do osso, envolta em um molho rústico que respeita cada fibra da carne é tradição com técnica.
                         </p>
-                        <a href="" class="btn btn-primary float-end">
-                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
                             <i class="bi bi-eye-fill"></i>
                         </a>
-
                     </div>
                 </div>            
             </div>
-
+            <!-- Card  -->
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
-                    <div class="card-body bg-success text-white">
-                        <h3 class="card-title text-white">
-                            <strong> <i>Maminha </i></strong>
+                    <img src="images/chu_07.png" alt="Alcatra com alho" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Alcatra com alho </i></strong>
                         </h3>
                         <p class="card-text text-start">
-                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
-                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                           A alcatra entra na grelha com respeito, e o alho dourado. É o tipo de corte que não precisa de firula. só fogo bem tratado, carne de qualidade e aquele tempero.
                         </p>
-                        <a href="" class="btn btn-primary float-end">
-                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
                             <i class="bi bi-eye-fill"></i>
                         </a>
-
                     </div>
                 </div>            
             </div>
             <div class="col-sm-6 col-md-4 mb-4">
                 <div class="card">
-                    <img src="images/chu_06.png" alt="Picanha" class="card-img-top">
-                    <div class="card-body bg-success text-white">
-                        <h3 class="card-title text-white">
-                            <strong> <i>Maminha </i></strong>
+                    <img src="images/chu_11.png" alt="Frango desossado com ervas" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Frango desossado com ervas</i></strong>
                         </h3>
                         <p class="card-text text-start">
-                            Esta é a combinação do sabor inconfundivel da picanha o aroma 
-                            acentuado do alho. Condimento que casa perfeitamente com este corte nobre.
+                          O frango desossado com ervas frescas é a síntese do cuidado: cada folha escolhida, cada minuto na brasa, aromático e memorável. 
                         </p>
-                        <a href="" class="btn btn-primary float-end">
-                            <span class="d-nome d-sm-inline">Saiba Mais</span>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
                             <i class="bi bi-eye-fill"></i>
                         </a>
-
                     </div>
                 </div>            
-            </div>   
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_08.png" alt="Tulipa apimentada" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Tulipa apimentada </i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           A tulipa é pequena no tamanho, mas gigante na personalidade. Marinada com pimentas escolhidas a dedo, ela chega na brasa pra mostrar que sabor se mede em intensidade. 
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>            
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_10.png" alt="Espetinho de frango com bacon" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Espetinho de frango com bacon</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           O frango traz leveza e suculência, o bacon chega com crocância e ousadia. Juntos, eles criam uma harmonia que só o fogo sabe revelar.
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+             <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_12.png" alt="Torresmo crocante" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Torresmo crocante</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           Torresmo bom não se mede no tamanho, mas no barulho que faz quando quebra. Crocante por fora, macio por dentro.
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_02.png" alt="Linguiça porco" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Linguiça porco</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           A linguiça é o manifesto do sabor popular: carne bem temperada, envolta em tripa e selada na brasa com orgulho. 
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_13.png" alt="Pernil fatiado " class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Pernil fatiado</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           O pernil é carne de respeito. Fica horas no fogo, absorvendo cada tempero como se fosse segredo de família. 
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+             <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_14.png" alt="Salmão com crosta de ervas" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Salmão com crosta de ervas</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           O salmão entra na brasa com elegância, mas é a crosta de ervas que transforma o prato em experiência. Cada folha, cada aroma, cada toque verde é pensado pra realçar o sabor da carne firme e suculenta.
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+             <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_15.png" alt="Sardinha com limão" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Sardinha com limão</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           A sardinha é daquelas que não pedem licença chegam com cheiro de mar, pele crocante e sabor direto ao ponto. Quando o limão entra em cena, não é só tempero: é contraste, é frescor, é aquele toque ácido que acorda o paladar e faz a brasa valer a pena. 
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
+             <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chu_16.png" alt="Tilápia na folha de bananeira" class="card-img-top">
+                    <div class="card-body bg-churras-praia">
+                        <h3 class="card-title">
+                            <strong><i>Tilápia na folha de bananeira</i></strong>
+                        </h3>
+                        <p class="card-text text-start">
+                           A folha de bananeira não é só embalagem é tradição, é técnica, é sabor. A tilápia cozinha envolta em aromas, protegida do fogo direto, absorvendo tudo que a natureza oferece. 
+                        </p>
+                        <a href="#" class="btn btn-churras float-end">
+                            <span class="d-none d-sm-inline">Saiba Mais</span>
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>            
+            </div>
         </section>
     </main>
-    <footer class="container-fluid ps-4 bg-dark text-white p-4 rounded-top" id="CONTATO">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <img src="images/LogoChuletaQuente.png" alt="logo pequeno" class="mb-2" width="150">
-                <br />
-                <p><i><strong>O melhor churrasco da Zona Leste </strong></i></p>
-                <address>
-                    <i class="bi bi-pin-fill"></i> Avenida Itaquera, 8266 - Itaquera São Paulo - SP - 08295000
-                    <br>
-                    <i class="bi bi-telephone-fill"></i> (11) 2185-9200 <br>
-                    <i class="bi bi-envelope-fill"></i>
-                    <a href="mailto:contato@chuletaquente.com.br?subject=Contato do Site"
-                     class="text-white text-decoration-none">
-                    contato@chuletaquente.com.br
-                    </a>
-                </address>
-                <div class="ratio ratio-4x3">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117054.8830394383!2d-46.51044499015454!3d-23.53375780691762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1755874050006!5m2!1spt-BR!2sbr" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-            <!-- Coluna endereço e mapa -->
-            <div class="col-md-4 col-sm-6 mb-4">
-
-            <!-- final coluna dos menus de footer -->
-            </div>
+<footer  class="container ps-4 bg-dark text-white p-4 rounded-top"  id="CONTATO">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img
+            src="images/LogoLaBrasaDoMar.png"
+            alt="logo pequeno"
+            class="mb-2"
+            width="150"
+          />
+          <br />
+          <p>
+            <i><strong> Onde o sabor da Zona Leste encontra a alma da praia</strong></i>
+          </p>
+          <address>
+            <i class="bi bi-pin-fill"></i> Avenida Itaquera, 8266 - Itaquera São
+            Paulo - SP - 08295000
+            <br />
+            <i class="bi bi-telephone-fill"></i> (11) 2185-9200 <br />
+            <i class="bi bi-envelope-at-fill"></i>
+            <a
+              href="mailto:contato@labrasadomar.com.br?subject=Contato do Site"
+              class="text-white text-decoration-none"
+            >
+              contato@labrasadomar.com.br
+            </a>
+          </address>
+          
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1828.8979222214853!2d-46.457737761427815!3d-23.539844184922032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66bf22458913%3A0xecdac462b58a9475!2sSenac%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1755874038973!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+        <!-- final coluna endereço e mapa -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h4>Links</h4>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-white ps-0">
+               <i class="bi bi-house-fill"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="destaques.html" class="nav-link text-white ps-0">
+                <i class="bi bi-star-fill"></i> Destaques
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="produto.html" class="nav-link text-white ps-0">
+                <i class="bi bi-basket-fill"></i> Produtos 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.html" class="nav-link text-white ps-0">
+                <i class="bi bi-envelope-at-fill"></i> Contato
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin/index.html" class="nav-link text-white ps-0">
+                <i class="bi bi-person-circle"></i> Administração
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.sp.senac.br/senac-itaquera" target="_blank" class="nav-link text-white ps-0">
+                <i class="bi bi-globe-americas"></i> Senac
+              </a>
+            </li>
+          </ul>
+        </div> <!-- final coluna dos menus do footer -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <h4>Contato</h4>
+          <form method="get" action="index.html">
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+              <input type="text"  name="nome_contato" placeholder="Digite seu nome" class="form-control" required>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-at-fill"></i>
+              </span>
+              <input type="email" class="form-control" name="email_contato" placeholder="Digite seu email" required>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">
+                <i class="bi bi-pencil-fill"></i>
+              </span>
+              <textarea name="comentario_contato" rows="4" placeholder="Digite seu comentário" class="form-control" required></textarea>
+            </div>
+            <button class="btn btn-danger w-100" type="submit">
+              Enviar <i class="bi-send-fill"></i>
+            </button>
+          </form>
+        </div> <!-- final coluna Formulário contato -->
+       
+        <div class="col-12 text-center border-top border-secondary pt-3 mt-3">
+          <small>Desenvolvido por Ghost™ | <a href="mailto:ghost@gmail.com.br" class="text-white text-decoration-none">ghost@gmail.com.br</a></small>
+        </div><!-- final linha fechamento rodapé -->
+        
+    
+
+      </div>
     </footer>
 </body>
 </html>

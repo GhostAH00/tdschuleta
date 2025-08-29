@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | La Brasa do Mar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/bootstrap.min.js" defer></script>
+</head>
+<body class="fundo-fixo">
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">
+            <img src="images/LogoLaBrasaDoMar.png" alt="Logotipo La Brasa do Mar" width="140px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menupublico">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menupublico">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i></a></li>
+                <li class="nav-item"><a href="index.html#destaques" class="nav-link">DESTAQUES</a></li>
+                <li class="nav-item"><a href="index.html#produtos" class="nav-link">PRODUTOS</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                        class="nav-link dropdown-toggle"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        TIPOS
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item">Bebidas</a></li>
+                        <li><a href="#" class="dropdown-item">Sobremesa</a></li>
+                        <li><a href="#" class="dropdown-item">Churrasco</a></li>
+                    </ul>
+                    </li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">CONTATO</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link d-flex">
+                        <i class="bi bi-person-fill"></i>&nbsp;ADMIN/CLIENTE
+                    </a>
+                </li>                
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container mt-5 pt-5">
+    <h2 class="alert alert-danger text-center">Fale Conosco ou Deixe seu Feedback</h2>
+
+    <!-- Formulário centralizado -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 mb-5">
+            <form method="get" action="index.html">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" name="nome" class="form-control" placeholder="Seu nome" required />
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-envelope-at-fill"></i></span>
+                    <input type="email" name="email" class="form-control" placeholder="Seu email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo de mensagem</label>
+                    <select class="form-select" name="tipo" id="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="contato">Contato direto</option>
+                    <option value="feedback">Feedback sobre produtos</option>
+                    <option value="sugestao">Sugestão de melhoria</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="avaliacao" class="form-label">Como você avalia sua experiência?</label>
+                    <select class="form-select" name="avaliacao" id="avaliacao">
+                    <option value="">Escolha uma opção</option>
+                    <option value="excelente">Excelente</option>
+                    <option value="boa">Boa</option>
+                    <option value="regular">Regular</option>
+                    <option value="ruim">Ruim</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-chat-dots-fill"></i></span>
+                    <textarea name="mensagem" rows="4" class="form-control" placeholder="Digite sua mensagem ou sugestão" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">Enviar <i class="bi bi-send-fill"></i></button>
+            </form>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+ <footer class="container bg-dark p-4 mt-5 pt-5 rounded-top" >
+    <div class="row justify-content-center">
+        <!-- Coluna de endereço -->
+        <div class="col-md-4 col-sm-6 mb-4 text-white">
+            <h4>Contato</h4>
+            <p><i class="bi bi-pin-fill"></i> Avenida Itaquera, 8266 - São Paulo - SP</p>
+            <p><i class="bi bi-telephone-fill"></i> (11) 2185-9200</p>
+            <p><i class="bi bi-envelope-at-fill"></i>
+                <a href="mailto:contato@labrasadomar.com.br" class="text-white text-decoration-none">
+                contato@labrasadomar.com.br
+                </a>
+            </p>
+        </div>
+
+        <!-- Coluna de links -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <h4 class="text-white">Links</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-house-fill"></i> Home
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="destaques.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-star-fill"></i> Destaques
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="produto.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-basket-fill"></i> Produtos
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="contato.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-envelope-at-fill"></i> Contato
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="admin/index.html" class="nav-link text-white ps-0">
+                    <i class="bi bi-person-circle"></i> Administração
+                </a>
+                </li>
+                <li class="nav-item">
+                <a href="https://www.sp.senac.br/senac-itaquera" target="_blank" class="nav-link text-white ps-0">
+                    <i class="bi bi-globe-americas"></i> Senac
+                </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Créditos -->
+        <div class="col-12 text-center border-top border-secondary pt-3 mt-3">
+            <small class="text-white">
+                Desenvolvido por Ghost™ |
+                <a href="mailto:ghost@gmail.com.br" class="text-white text-decoration-none">ghost@gmail.com.br</a>
+            </small>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
