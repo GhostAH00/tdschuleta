@@ -21,9 +21,9 @@ CREATE TABLE `produtos` (
  
 -- Extraindo dados da tabela `produtos`
 INSERT INTO `produtos` (`id`, `tipo_id`, `descricao`, `resumo`, `valor`, `imagem`, `destaque`) VALUES
-(1, 1, 'Picanha', 'Escolhi a melhor parte da peça, selei com manteiga de alho e finalizei no ponto perfeito porque picanha boa não se esconde, ela se revela no sabor.', 49.90, 'chu_01.jpg', 1),
-(2, 1, 'Costela', 'Cozida lentamente por horas, a costela chega à mesa soltando do osso, envolta em um molho rústico que respeita cada fibra da carne é tradição com técnica.', 49.90, 'chu_06.jpg', 1),
-(3, 1, 'Alcatra com alho', 'A alcatra entra na grelha com respeito, e o alho dourado. É o tipo de corte que não precisa de firula. só fogo bem tratado, carne de qualidade e aquele tempero.', 39.90, 'chu_07.jpg', 0),
+(1, 1, 'Picanha', 'Escolhi a melhor parte da peça, selei com manteiga de alho e finalizei no ponto perfeito porque picanha boa não se esconde, ela se revela no sabor.', 49.90, 'chu_01.png', 1),
+(2, 1, 'Costela', 'Cozida lentamente por horas, a costela chega à mesa soltando do osso, envolta em um molho rústico que respeita cada fibra da carne é tradição com técnica.', 49.90, 'chu_06.png', 1),
+(3, 1, 'Alcatra com alho', 'A alcatra entra na grelha com respeito, e o alho dourado. É o tipo de corte que não precisa de firula. só fogo bem tratado, carne de qualidade e aquele tempero.', 39.90, 'chu_07.png', 0),
 (4, 1, 'Frango desossado com ervas', 'O frango desossado com ervas frescas é a síntese do cuidado: cada folha escolhida, cada minuto na brasa, aromático e memorável.', 29.90, 'chu_11.png', 1),
 (5, 1, 'Tulipa apimentada', 'A tulipa é pequena no tamanho, mas gigante na personalidade. Marinada com pimentas escolhidas a dedo, ela chega na brasa pra mostrar que sabor se mede em intensidade.', 27.90, 'chu_08.png', 0),
 (6, 1, 'Espetinho de frango com bacon', 'O frango traz leveza e suculência, o bacon chega com crocância e ousadia. Juntos, eles criam uma harmonia que só o fogo sabe revelar.', 24.90, 'chu_10.png', 0),
