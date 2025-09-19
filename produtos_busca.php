@@ -1,16 +1,45 @@
 <?php 
+// Inclui a classe do produto
 include_once "class/produto.php";
-$produto = new Produto();
-$produtos = $produto->listar();
-$linhas = count($produtos);
+
+// Inicializa as variáveis com valores padrão para evitar erros
+$produtos = [];
+$linhas = 0;
+$busca = '';
+
+// Verifica se o parâmetro 'buscar' foi passado na URL
+if (isset($_GET['buscar'])) {
+    $busca = $_GET['buscar'];
+    $produto = new Produto();
+    $produtos = $produto->buscarPorString($busca); 
+    $linhas = count($produtos);
+}
 ?>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <title>La Brasa do Mar</title>
+    </head>
+    <body class="fundo-fixo">
+        <header>
+            <?php include 'menu_publico.php'?>
+        </header>
+        <main class="container">
+            <?php include "carousel.php"?>
 <section>
     <?php if($linhas == 0){ ?>
         <h2 class="alert alert-marrom">Não há produtos em cadastrados</h2>
     <?php }?>
     <?php if($linhas > 0){?>
-        <h2 class="alert alert-marrom">Produtos</h2>
+        <h2 class="alert alert-marrom">Busca de produtos por "<?=$busca?>"</h2>
         <div class="row">
             <?php foreach($produtos as $prod):?>
                 <div class="col-sm-6 col-md-4 mb-4">
@@ -42,3 +71,10 @@ $linhas = count($produtos);
         </div>
     <?php }?>
 </section>
+        </main>
+        <footer class="container ps-4 bg-dark text-white p-4 rounded-top" id="CONTATO">
+            <a name="contato"></a>
+            <?php include "rodape.php"?>
+        </footer>
+    </body>
+</html>

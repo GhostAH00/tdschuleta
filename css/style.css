@@ -65,3 +65,11 @@ select.form-select:focus {
   border-color: #ff7043 !important;
   transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
+
+/* Cor para títulos de produtos */
+.alert-marrom {
+  background-color: #5d4037; /* Marrom escuro */
+  color: #fff; /* Texto branco para contraste */
+  border-color: #5d4037;
+  font-weight: bold;
+}

@@ -23,11 +23,11 @@
         <title>La Brasa do Mar</title>
     </head>
     <body class="fundo-fixo">
-        <header>
+    <header>
            <!-- área de menu  -->
         <?php include 'menu_publico.php';?> 
-        </header>
-        <main class="container">
+    </header>
+    <main class="container">
 
             <!-- area de carousel (inclui uma sessão html) -->
             <?php include "carousel.php" ?>
@@ -40,8 +40,12 @@
             <a class="pt-6" name="produtos">&nbsp;</a>
             <?php include "produtos_geral.php"?>
 
-        </main>
-        
+    </main>
+    <footer  class="container ps-4 bg-dark text-white p-4 rounded-top"  id="CONTATO">
+      <!-- rodapé -->
+      <a name="contato"></a>
+      <?php include "rodape.php"?>
+    </footer>
         
     </body>
 </html>
